@@ -60,14 +60,21 @@ function handleMouseMove(event) {
           (doc && doc.clientTop  || body && body.clientTop  || 0 );
     }
     mousePos = {
-        x: event.pageX,
-        y: event.pageY
+        "x": event.pageX,
+        "y": event.pageY
     };
     // Use event.pageX / event.pageY here
 }
 
 function addMousePosition() {
-    posData.push({"x": mousePos.x, "y": mousePos.y, "time": Date.now()})
+    let pos = mousePos
+    if(!pos){
+        //do nothing
+    }
+    else{
+        posData.push({"x": mousePos.x, "y": mousePos.y, "time": Date.now()})
+    }
+    
 }
 
 window.setInterval(addMousePosition, 100)
