@@ -79,7 +79,7 @@ function addMousePosition() {
     
 }
 
-window.setInterval(addMousePosition, 100)
+window.setInterval(addMousePosition, 50)
 
 document.addEventListener("mousedown", printMouseDown)
 document.addEventListener("mouseup", printMouseUp)
