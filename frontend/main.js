@@ -31,11 +31,13 @@ function printMouseUp(event) {
     })
     fetch(request).then((res)=> {
         clickData = []
+        posData = []
     }
 
     ).catch((error) => { console.log("an error occurred", error)
 
     clickData = []
+    posData = []
         
     })
 }
