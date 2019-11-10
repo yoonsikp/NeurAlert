@@ -1,0 +1,38 @@
+
+
+.hello {
+    text-align: center;
+    border: 50px;
+    font: verdana;
+    color: #475B5A;
+
+}
+
+a:hover {
+  background-color: #ce0606;
+  cursor: pointer;
+}
+
+a:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+/* Non-Demo Styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  border: 50px;
+}
+
+.md-tile { 
+    border: 50px
+}
+
+div { 
+    text-align: center;
+}
+
